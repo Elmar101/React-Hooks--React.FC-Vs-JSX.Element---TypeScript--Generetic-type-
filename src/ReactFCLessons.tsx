@@ -1,5 +1,6 @@
 import FormsGeneretcs from "./FormsGeneretcs"
 import GeneretcReact from "./GeneretcReact"
+import JSXElementLessons from "./JSXElementLessons"
 import TypeReducer from "./TypeReducer"
 
 type GreetingProps = {
@@ -41,6 +42,18 @@ const ReactFCLessons = () => {
             <GetNameFullName name="Resad" sname="Amanov"/>
             <GeneretcReact name='TypeScript FC' data='React.FC'/>
             <TypeReducer/>
+            <JSXElementLessons>
+              {
+                ({count,setCount})=>(
+                  <div>
+                    <h1>{count}</h1>
+                    <button onClick = {()=> setCount(count+1)}> +1 </button>
+                    <button onClick = {()=> setCount(count-1)}> -1 </button>
+                    <button onClick = {()=> setCount(0)}> reset </button>
+                  </div>
+                )
+              }
+            </JSXElementLessons>
             < FormsGeneretcs/>  
         </>
     )

@@ -19,7 +19,8 @@ const PromiseLesson = () => {
 
     return (
         <div>
-           <h1>ConsoleLogaBax</h1>
+            <h1>useing useEffect Hooks</h1>
+           <p>PromiseLesson Consola Bax</p>
         </div>
     )
 }

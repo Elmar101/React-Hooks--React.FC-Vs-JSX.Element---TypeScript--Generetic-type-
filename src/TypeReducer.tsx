@@ -20,7 +20,7 @@ const TodoReducer = (state:State ,action: Actions)=>{
          return state;
    }
 }
-
+ 
 const TypeReducer:React.FC = () => {
    const [state, dispatch] = useReducer( TodoReducer,[])
 
